@@ -84,10 +84,13 @@ int main() {
         {   
             printf("Atributo: População - %lu\n", populacao1);
             printf("A cidade vencedora é: %s\n", nomeCidade1);
-        } else
+        } else if (populacao1 < populacao2)
         {
             printf("Atributo: População - %lu\n", populacao2);
             printf("A cidade vencedora é: %s\n", nomeCidade2);
+        } else
+        {
+            printf("*** Empate ***\n");
         }
         break;
         case 2:
@@ -95,10 +98,13 @@ int main() {
         {
             printf("Atributo : Área - %.2f km²\n", area1);
             printf("A cidade vencedora é: %s\n", nomeCidade1);
-        } else
+        } else if (area1 < area2)
         {
             printf("Atributo : Área - %.2f km²\n", area2);
             printf("A cidade vencedora é: %s\n", nomeCidade2);
+        } else
+        {
+            printf("*** Empate ***\n");
         }
         break;
         case 3:
@@ -106,10 +112,13 @@ int main() {
         {
             printf("Atributo: PIB - %.2lf\n", pib1);
             printf("A cidade vencedora é: %s\n", nomeCidade1);
-        } else
+        } else if (pib1 < pib2)
         {
             printf("Atributo: PIB - %.2lf\n", pib2);
             printf("A cidade vencedora é: %s\n", nomeCidade2);
+        } else
+        {
+            printf("*** Empate ***\n");
         }
         break;
         case 4:
@@ -117,10 +126,13 @@ int main() {
         {
             printf("Atributo: Número de pontos turísticos - %d\n", numPontosTur1);
             printf("A cidade vencedora é: %s\n", nomeCidade1);
-        } else
+        } else if (numPontosTur1 < numPontosTur2)
         {
             printf("Atributo: Número de pontos turísticos - %d\n", numPontosTur2);
             printf("A cidade vencedora é: %s\n", nomeCidade2);
+        } else
+        {
+            printf("*** Empate ***\n");
         }
         break;
         case 5:
@@ -128,10 +140,13 @@ int main() {
         {
             printf("Atributo: Densidade demográfica - %d\n", denDemografica1);
             printf("A cidade vencedora é: %s\n", nomeCidade1);
-        } else
+        } else if (denDemografica1 > denDemografica2)
         {
             printf("Atributo: Densidade demográfica - %d\n", denDemografica2);
             printf("A cidade vencedora é: %s\n", nomeCidade2);
+        } else
+        {
+            printf("*** Empate ***\n");
         }
         break;
         default:
